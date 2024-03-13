@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- import font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Submission Template</title>
+        <!-- import CSS styles -->
+        <link rel="stylesheet" href="styles.css" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+
+    <body>
+        <div class="main_content">
+            <div class = "section title">
+                <div class = "header page_header">
+                    <div class="header_content">
+                        <h1>A/B Testing</h1>
+                        <div class = "header_subtext">
+                            <p>Analyzing the Efficacy of UI Updates</p>
+                        </div>
+                        <div class = "project_details">
+                            <div class = "detail_card">
+                                <div class = "detail_name">
+                                    Role
+                                </div>
+                                <div class = "info">
+                                    Student
+                                </div>
+                            </div>
+                            <div class = "detail_card">
+                                <div class = "detail_name">
+                                    Time
+                                </div>
+                                <div class = "info">
+                                    Mar 2024
+                                </div>
+                            </div>
+                            <div class = "detail_card">
+                                <div class = "detail_name">
+                                    Class
+                                </div>
+                                <div class = "info">
+                                    CS1300: UI/UX
+                                </div>
+                            </div>
+                            <div class = "detail_card">
+                                <div class = "detail_name">
+                                    Skills
+                                </div>
+                                <div class = "info">
+                                    HTML, CSS, Statistics
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            
+                <div class = "body project_summary">
+                    <p>
+                        During this project, students were given an appointment scheduling interface (<bold>Version A</bold>).
+                        Our goal was to redesign the interface (<bold>Version B</bold>) and analyze the gathered data to test whether our redesigned interfaces improved the interface in tangible ways.
+                    </p>
+
+                    <p>
+                        This project utilized A/B testing techniques to analyze how the user experience changed from <bold>Version A</bold> to <bold>Version B</bold> and draw conclusions about how <bold>Version B</bold> lead to different user experiences. 
+                    </p>
+                </div>
+            </div>
+            
+            <div class = "section">
+                <div class = "header subsection_header">
+                    <div class="header_content">
+                        <h2>Redesigned Interface</h2>
+                    </div>
+                </div>
+
+                <div div class="body project_summary">
+                    <p>Below are the original (<bold>A</bold>) and redesigned (<bold>B</bold>) interfaces</p>
+                    <h3>Version A</h3>
+                    <img src="./assets/ver_a_scr.png" alt="Version A of the Interface">
+                    <h3>Version B</h3>
+                    <img src="./assets/ver_b_scr.png" alt="Version B of the Interface">
+                    <p>The change I primarily focused on was an intuitive ordering of appointments.</p>
+
+                    <p>In <bold>Version A</bold>, the appointments seemed to not have any specific order.</p>
+
+                    <p>In <bold>Version B</bold>, I decided to sort the appointments first by location and then by time. Additionally, the buttons darken on hover to look more intuitively clickable.</p>
+                    <div class="grphic">
+                        <img src="./assets/button.gif" alt="GIF of button change on hover">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="header subsection_header">
+                    <div class = "header_content">
+                        <h2>Quanitfying Changes in UX</h2>
+                        <div class = "header_subtext">
+                            <p>What metrics can we use to quanity the user experience and how it might change?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="body"> 
+                    <p>Throughout this project, I focused on 3 primary metrics:</p>
+                </div>
+
+                <div class="graphic">
+                    <div class = "split_panel">
+                        <div class = "panel interest_box">
+                            <div class = "box_content">
+                                <h3>1.</h3>
+                                <p> How many users misclicked?</p>
+                            </div>
+                        </div>
+                        <div class = "panel interest_box">
+                            <div class = "box_content">
+                                <h3>2.</h3>
+                                <p> How long did users take to find the right button?</p>
+                            </div>
+                        </div>
+                        <div class = "panel interest_box">
+                            <div class = "box_content">
+                                <h3>3.</h3>
+                                <p> How long did users take to click on any button?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="body project_summary" id="metrics_body">
+                    <h3>1. Misclick Rate</h3>
+                    <p>How many users clicked a different button on the page before finding the correct button for the task?</p>
+
+                    <div class="tab">
+                        <div class="row_card">
+                            <div class="row_head">
+                                <p>
+                                    <bold>Null Hypothesis</bold>
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                There is <bold>no significant difference</bold> between the number of Ver A users who misclicked and Ver B users who misclicked.
+                                </p>
+                            </div>
+                        </div>                        
+                        <div class="row_card">
+                            <div class = "row_head">
+                                <p>
+                                    <bold>
+                                        Alternative Hypothesis
+                                    </bold>
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                    The number of Ver B users who misclicked is <bold>significantly less</bold> than that of Ver A users.
+                                </p>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <p>
+                        I predicted that the collected data would support the alternative hypothesis, because the changes made for Ver B hopefully clarified page navigation, decreasing the chance that someone clicks on a wrong button.
+                    </p>
+
+                    <h3>2. Time Spent on Page</h3>
+                    <p> Time spent on the webpage for each user group </p>
+
+
+                    <div class="tab">
+                        <div class="row_card">
+                            <div class="row_head">
+                                <p>
+                                    <bold>Null Hypothesis</bold>
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                    There is <bold>no significant difference</bold> between the time users spent on Ver A and the time spent on Ver B.
+                                </p>
+                            </div>
+                        </div>                        
+                        <div class="row_card">
+                            <div class = "row_head">
+                                <p>
+                                    <bold>
+                                        Alternative Hypothesis
+                                    </bold>
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                    The time users spent on Ver B is <bold>significantly less</bold> than the time spent on Ver A.
+                                </p>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <p>
+                        I predicted that the collected data will support the alternative hypothesis, because the changes for Ver B hopefully made page navigation easier, allowing users to find the correct appointment faster.</p>
+
+                    <h3>3. Time Until First Click</h3>
+                    <p>This will be defined as the time before the user's first click. I thought this would be meaningful to observe because the time until first click might be correlated with the users' confidence in their ability to complete their task.</p>
+
+                    <div class="tab">
+                        <div class="row_card">
+                            <div class="row_head">
+                                <p>
+                                    <bold>Null Hypothesis</bold>
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                    There is <bold>no significant difference</bold> between the time before Ver A users' first clicks and the time before Ver B users first clicks.</p>
+                            </div>
+                        </div>                        
+                        <div class="row_card">
+                            <div class = "row_head">
+                                <p>
+                                    <bold>
+                                        Alternative Hypothesis
+                                    </bold>
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                    The time before a Ver B user's first click is <bold>significantly less</bold> than the time before a Ver A user's first click.
+                                </p>
+                            </div>
+                        </div>                        
+                    </div>
+                                        
+                    <p>
+                        I predicted that the collected data will support the alternative hypothesis. 
+                        I thought that the changes I made for Ver B would both make button interaction more intuitive and make finding the relevant appointment faster.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class = "section">
+                <div class = "header subsection_header">
+                    <div class="header_content">
+                        <h2>Data & Analysis</h2>
+                    </div>
+                </div>
+
+                <div class="body">
+                    <h3>1. Misclick Rate</h3>
+
+                    <p>The data for this experiment is categorical, with each user for each version being categorized as TRUE (did misclick), or FALSE (did not misclick).</p>
+
+                    <p>I used the Chi-Square Test to determine the probability of the TRUE/FALSE distribution of Version A users and Version B users being the same.</p>
+
+                    <p>The Chi-Square Test returned a p-value of 4.28%, meaning that there is a 4.28% probability that the distribution of Ver A and Ver B users are the same. Given this is less than 5%, we can conclude that this is statistically significant</p>
+
+                    <p>The data seems to support that the misclick distribution of Version A users is not the same as the misclick distribution of Version B users.</p>
+
+                    <h3>2. Time Spent on Page</h3>
+
+                    <h3>3. Time Until First Click</h3>
+
+                </div>
+            </div>
+
+            <div class = "section">
+                <div class = "header subsection_header">
+                    <div class="header_content">
+                        <h2>Conclusions</h2>
+                    </div>
+                </div>
+
+                <div div class="body project_summary">
+                    <p>Text</p>
+                </div>
+            </div>
+
+
+            <div class = "section">
+                <div class = "header subsection_header">
+                    <div class="header_content">
+                        <h2>Appendix</h2>
+                    </div>
+                </div>
+
+                <div div class="body project_summary">
+                    <h3>1. Misclick Rate</h3>
+
+                    <table>
+                        <tr>
+                            <th> Ver A</th>
+                            <th> Ver B</th>
+                        </tr>
+                        <tr>
+                            <td>TRUE</td>
+                            <td>FALSE</td>
+                        </tr>
+                        <tr>
+                            <td>TRUE</td>
+                            <td>FALSE</td>
+                        </tr>
+                        <tr>
+                            <td>FALSE</td>
+                            <td>FALSE</td>
+                        </tr>
+                        <tr>
+                            <td>FALSE</td>
+                            <td>FALSE</td>
+                        </tr>
+                        <tr>
+                            <td>TRUE</td>
+                            <td>FALSE</td>
+                        </tr>
+                        <tr>
+                            <td>TRUE</td>
+                            <td>FALSE</td>
+                        </tr>
+                        <tr>
+                            <td>FALSE</td>
+                            <td>FALSE</td>
+                        </tr>
+                        <tr>
+                            <td>FALSE</td>
+                            <td>FALSE</td>
+                        </tr>
+                        <tr>
+                            <td>TRUE</td>
+                            <td>FALSE</td>
+                        </tr>
+                        <tr>
+                            <td>TRUE</td>
+                            <td>FALSE</td>
+                        </tr>
+                        <tr>
+                            <td>FALSE</td>
+                            <td>FALSE</td>
+                        </tr>
+                        <tr>
+                            <td>TRUE</td>
+                            <td>FALSE</td>
+                        </tr>
+                        <tr>
+                            <td>TRUE</td>
+                            <td>FALSE</td>
+                        </tr>
+                        <tr>
+                            <td>FALSE</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>TRUE</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div> 
+    </body>
+
+</html>
