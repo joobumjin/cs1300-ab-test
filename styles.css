@@ -154,15 +154,61 @@ img {
     flex-direction: column;
     .row_card { 
         display: flex;
-        flex-direction: row;
+        /* flex-flow: row wrap; */
+        flex-flow: row;
+        width: 100%;
+        align-items: center;
         .row_head {
-            max-width: 25%;
+            width: 25%;
+            max-width: 10rem;
             min-width: 10rem;
             p {
                 font-size: 24px;
                 color: var(--dim_grey);
             }
         }
+        .row_content{
+            width: 75%;
+            max-width: 80%;
+            text-align: left;
+            max-height: 7rem;
+            table{
+                width: 100%;
+                max-width: 25rem;
+            }
+        }
+    }
+}
+
+.sub {
+    height: 50%;
+    align-content: space-between;
+    p {
+        margin: 0 0 0 0;
+    }
+    .row_card {
+        .row_head {
+            width: 20%;
+            max-width: 8rem;
+            min-width: 8rem;
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+table{ 
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 70% ;
+    th, td {
+        border: 1px solid var(--charcoal);
+        text-align: center;
+    }
+    th{
+        color: var(--dim_grey);
+        font-weight: 600;
     }
 }
 
@@ -183,6 +229,36 @@ img {
             height: auto;
             margin-right: 2rem;
             margin-bottom: 2rem;
+        }
+    }
+    .tab{
+        justify-content: center;
+        align-items: center;
+        .row_card {
+            flex-direction: column;
+            align-content: center;
+            width: fit-content;
+            .row_content, .row_head {
+                width: fit-content;
+                text-align: center;
+                max-width: 100%;
+            }
+            .row_head {
+                min-width: none;
+                p{
+                    margin-bottom: 1vh;
+                }
+            }
+        }
+    }
+    .sub{
+        .row_card {
+            margin-bottom: .75vh;
+            .row_head {
+                p{
+                    margin-bottom: .5vh;
+                }
+            }
         }
     }
 }

@@ -141,9 +141,9 @@
                                     <bold>Null Hypothesis</bold>
                                 </p>
                             </div>
-                            <div>
+                            <div class="row_content">
                                 <p>
-                                There is <bold>no significant difference</bold> between the number of Ver A users who misclicked and Ver B users who misclicked.
+                                There is <bold>no significant difference</bold> between the rate of Ver A users who misclicked and Ver B users who misclicked.
                                 </p>
                             </div>
                         </div>                        
@@ -155,9 +155,9 @@
                                     </bold>
                                 </p>
                             </div>
-                            <div>
+                            <div class="row_content">
                                 <p>
-                                    The number of Ver B users who misclicked is <bold>significantly less</bold> than that of Ver A users.
+                                    The rate at which Ver B users misclicked is <bold>significantly less</bold> than that of Ver A users.
                                 </p>
                             </div>
                         </div>                        
@@ -169,6 +169,8 @@
 
                     <h3>2. Time Spent on Page</h3>
                     <p> Time spent on the webpage for each user group </p>
+
+                    <p>The time spent on the page was measured as the milliseconds from start until the user clicked the button for the appropriate appointment.</p>
 
 
                     <div class="tab">
@@ -192,7 +194,7 @@
                                     </bold>
                                 </p>
                             </div>
-                            <div>
+                            <div class="row_content">
                                 <p>
                                     The time users spent on Ver B is <bold>significantly less</bold> than the time spent on Ver A.
                                 </p>
@@ -213,7 +215,7 @@
                                     <bold>Null Hypothesis</bold>
                                 </p>
                             </div>
-                            <div>
+                            <div class="row_content">
                                 <p>
                                     There is <bold>no significant difference</bold> between the time before Ver A users' first clicks and the time before Ver B users first clicks.</p>
                             </div>
@@ -226,7 +228,7 @@
                                     </bold>
                                 </p>
                             </div>
-                            <div>
+                            <div class="row_content">
                                 <p>
                                     The time before a Ver B user's first click is <bold>significantly less</bold> than the time before a Ver A user's first click.
                                 </p>
@@ -256,13 +258,217 @@
 
                     <p>I used the Chi-Square Test to determine the probability of the TRUE/FALSE distribution of Version A users and Version B users being the same.</p>
 
-                    <p>The Chi-Square Test returned a p-value of 4.28%, meaning that there is a 4.28% probability that the distribution of Ver A and Ver B users are the same. Given this is less than 5%, we can conclude that this is statistically significant</p>
+                    <div class="tab">
+                        <div class="row_card">
+                            <div class="row_head">
+                                <p>
+                                    <bold>P-Value</bold>
+                                </p>
+                            </div>
+                            <div class="row_content">
+                                <p>
+                                    0.000796
+                                </p>
+                            </div>
+                        </div>                        
+                        <div class="row_card">
+                            <div class = "row_head">
+                                <p>
+                                    <bold>
+                                        Raw Data
+                                    </bold>
+                                </p>
+                            </div>
+                            <div class="row_content">
+                                <table>
+                                    <tr>
+                                        <td></td>
+                                        <th>TRUE</th>
+                                        <th>FALSE</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Ver A</th>
+                                        <td> 9 </td>
+                                        <td> 7 </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Ver B</th>
+                                        <td> 0 </td>
+                                        <td> 14 </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>                        
+                    </div>
 
-                    <p>The data seems to support that the misclick distribution of Version A users is not the same as the misclick distribution of Version B users.</p>
+                    <p> Casually, it could be said that Version B users had different misclick behavior than Version A users, as over half of Version A users misclicked, compared to 0 Version B users.</p>
+
+                    <p>The Chi-Square Test p-value above indicates that there is a 0.0796% probability that the distribution of Ver A and Ver B users are the same. Given this is less than 5%, we can conclude that this sample is statistically significant.</p>
+
+                    <p>
+                        Specifically, the data seems to reject the Null Hypothesis that the misclick rate of Version A and B users is the same.
+                    </p>
 
                     <h3>2. Time Spent on Page</h3>
 
+                    <div class="tab">
+                        <div class="row_card">
+                            <div class="row_head">
+                                <p>
+                                    <bold>Version A</bold>
+                                </p>
+                            </div>
+                            <div class="row_content">
+                                <div class="sub tab">
+                                    <div class="row_card">
+                                        <div class="row_head">
+                                            <p>
+                                                <bold>Average</bold>
+                                            </p>
+                                        </div>
+                                        <div class="row_content">
+                                            <p>29,411.25 ms</p>
+                                        </div>
+                                    </div> 
+                                    <div class="row_card">
+                                        <div class="row_head">
+                                            <p>
+                                                <bold>Variance</bold>
+                                            </p>
+                                        </div>
+                                        <div class="row_content">
+                                            <p>341,951,899.90 ms</p>
+                                        </div>
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="row_card">
+                            <div class="row_head">
+                                <p>
+                                    <bold>Version B</bold>
+                                </p>
+                            </div>
+                            <div class="row_content">
+                                <div class="sub tab">
+                                    <div class="row_card">
+                                        <div class="row_head">
+                                            <p>
+                                                <bold>Average</bold>
+                                            </p>
+                                        </div>
+                                        <div class="row_content">
+                                            <p>10,626.21 ms</p>
+                                        </div>
+                                    </div> 
+                                    <div class="row_card">
+                                        <div class="row_head">
+                                            <p>
+                                                <bold>Variance</bold>
+                                            </p>
+                                        </div>
+                                        <div class="row_content">
+                                            <p>10,394,333.72 ms</p>
+                                        </div>
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row_card">
+                            <div class="row_head">
+                                <p>
+                                    <bold>P Value</bold>
+                                </p>
+                            </div>
+                            <div class="row_content">
+                                <p>0.00052</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>On first glance, it can be said that users spent about half as long booking an appointment on Version B when compared to Version A.</p>
+
+                    <p>Moreover, a very low p value of 0.052% indicates a statistically significant result: there is a 0.052% chance that the average time spent on Version A is the same as the average time spent on Version B.</p>
+
+                    <p>Therefore, the data seems to reject the Null Hypothesis and instead support the Alternative Hypothesis that users, on average, spend less time booking an appointment on Version B as compared to Version A.</p>
+
                     <h3>3. Time Until First Click</h3>
+                    
+
+                    <div class="tab">
+                        <div class="row_card">
+                            <div class="row_head">
+                                <p>
+                                    <bold>Version A</bold>
+                                </p>
+                            </div>
+                            <div class="row_content">
+                                <div class="sub tab">
+                                    <div class="row_card">
+                                        <div class="row_head">
+                                            <p>
+                                                <bold>Average</bold>
+                                            </p>
+                                        </div>
+                                        <div class="row_content">
+                                            <p>10,452.56 ms</p>
+                                        </div>
+                                    </div> 
+                                    <div class="row_card">
+                                        <div class="row_head">
+                                            <p>
+                                                <bold>Variance</bold>
+                                            </p>
+                                        </div>
+                                        <div class="row_content">
+                                            <p>27,388,063.33 ms</p>
+                                        </div>
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="row_card">
+                            <div class="row_head">
+                                <p>
+                                    <bold>Version B</bold>
+                                </p>
+                            </div>
+                            <div class="row_content">
+                                <div class="sub tab">
+                                    <div class="row_card">
+                                        <div class="row_head">
+                                            <p>
+                                                <bold>Average</bold>
+                                            </p>
+                                        </div>
+                                        <div class="row_content">
+                                            <p>6,940.57 ms</p>
+                                        </div>
+                                    </div> 
+                                    <div class="row_card">
+                                        <div class="row_head">
+                                            <p>
+                                                <bold>Variance</bold>
+                                            </p>
+                                        </div>
+                                        <div class="row_content">
+                                            <p>8,193,838.57 ms</p>
+                                        </div>
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row_card">
+                            <div class="row_head">
+                                <p>
+                                    <bold>P Value</bold>
+                                </p>
+                            </div>
+                            <div class="row_content">
+                                <p>0.0147</p>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -275,12 +481,16 @@
                 </div>
 
                 <div div class="body project_summary">
-                    <p>Text</p>
+                    <p>Ultimately, Version B users seemed to be able to book their appointment faster, with more confidence, and with less mistakes.</p>
+
+                    <p>To this end, the changes made for Version B like aided in bringing about this effect.</p>
+
+                    <p>However, it is also important to note some confounding factorsas well. Firstly, Ver A users were new to the task, while Ver B users had several experiences in completing similar tasks before performing my task. Thus, it is possible that the observed differences in UX are actually a consequence of users remembering the task rather than Ver B making notable UX improvements.</p>
                 </div>
             </div>
 
 
-            <div class = "section">
+            <!-- <div class = "section">
                 <div class = "header subsection_header">
                     <div class="header_content">
                         <h2>Appendix</h2>
@@ -358,7 +568,7 @@
                     </table>
                 </div>
             </div>
-        </div> 
+        </div>  -->
     </body>
 
 </html>
