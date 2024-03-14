@@ -220,13 +220,13 @@ table{
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
     .split_panel {
         flex-flow: row wrap;
         height: auto;
         justify-content: center;
         .interest_box {
-            margin: 0 1rem 0 1rem;
+            margin: 0 0rem 0 0rem;
             flex-grow: 1;
             max-width: none;
             height: auto;
@@ -271,6 +271,19 @@ table{
                     margin-bottom: .5vh;
                 }
             }
+        }
+    }
+    .split_panel {
+        flex-flow: column;
+        height: auto;
+        justify-content: center;
+        .interest_box {
+            width: auto;
+            flex-grow: 1;
+            max-width: none;
+            height: auto;
+            margin-right: 2rem;
+            margin-bottom: 2rem;
         }
     }
 }
